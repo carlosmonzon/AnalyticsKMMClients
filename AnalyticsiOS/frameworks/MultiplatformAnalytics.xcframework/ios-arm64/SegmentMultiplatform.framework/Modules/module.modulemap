@@ -1,0 +1,8 @@
+framework module SegmentMultiplatform {
+    umbrella header "SegmentMultiplatform.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

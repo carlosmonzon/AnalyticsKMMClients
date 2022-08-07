@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "analytics-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/segmentio/analytics-ios",
+      "state" : {
+        "branch" : "master",
+        "revision" : "113543677ed984f4d43dd118dd632d2786db62f2"
+      }
+    },
+    {
+      "identity" : "segmentmultiplatformpackage",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/carlosmonzon/SegmentMultiplatformPackage",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3a3cb7f5cc76b17c4f147da9198ce0594a3ce7cd"
+      }
+    }
+  ],
+  "version" : 2
+}
