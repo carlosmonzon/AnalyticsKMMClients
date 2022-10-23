@@ -10,12 +10,12 @@
       }
     },
     {
-      "identity" : "segmentmultiplatformpackage",
+      "identity" : "segmentmultiplatform",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/carlosmonzon/SegmentMultiplatformPackage",
+      "location" : "https://github.com/carlosmonzon/SegmentMultiplatform",
       "state" : {
-        "branch" : "main",
-        "revision" : "3a3cb7f5cc76b17c4f147da9198ce0594a3ce7cd"
+        "revision" : "48e38d479d6f5a49149f5a3d4c14a71132d325cd",
+        "version" : "0.1.2"
       }
     }
   ],

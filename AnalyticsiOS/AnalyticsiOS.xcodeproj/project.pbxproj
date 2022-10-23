@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E4045B63289ED0FD00C4CD8B /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = E4045B62289ED0FD00C4CD8B /* Segment */; };
-		E4045B68289F5E8100C4CD8B /* MultiplatformAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = E4045B67289F5E8100C4CD8B /* MultiplatformAnalytics */; };
 		E49EAACA288C4E70002410A5 /* SegmentMultiplatformDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EAABA288C4E6E002410A5 /* SegmentMultiplatformDemoApp.swift */; };
 		E49EAACB288C4E70002410A5 /* SegmentMultiplatformDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EAABA288C4E6E002410A5 /* SegmentMultiplatformDemoApp.swift */; };
 		E49EAACC288C4E70002410A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EAABB288C4E6E002410A5 /* ContentView.swift */; };
@@ -16,6 +15,7 @@
 		E49EAACE288C4E70002410A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49EAABC288C4E70002410A5 /* Assets.xcassets */; };
 		E49EAACF288C4E70002410A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49EAABC288C4E70002410A5 /* Assets.xcassets */; };
 		E49EAB3B288D4FDB002410A5 /* AnalyticsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49EAB3A288D4FDB002410A5 /* AnalyticsEnvironment.swift */; };
+		E4FA2F9C2904BEB10061C777 /* SegmentMultiplatform in Frameworks */ = {isa = PBXBuildFile; productRef = E4FA2F9B2904BEB10061C777 /* SegmentMultiplatform */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4045B68289F5E8100C4CD8B /* MultiplatformAnalytics in Frameworks */,
 				E4045B63289ED0FD00C4CD8B /* Segment in Frameworks */,
+				E4FA2F9C2904BEB10061C777 /* SegmentMultiplatform in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			name = "SegmentMultiplatformDemo (AnalyticsiOS)";
 			packageProductDependencies = (
 				E4045B62289ED0FD00C4CD8B /* Segment */,
-				E4045B67289F5E8100C4CD8B /* MultiplatformAnalytics */,
+				E4FA2F9B2904BEB10061C777 /* SegmentMultiplatform */,
 			);
 			productName = "SegmentMultiplatformDemo (iOS)";
 			productReference = E49EAAC1288C4E70002410A5 /* SegmentMultiplatformDemo.app */;
@@ -177,7 +177,7 @@
 			mainGroup = E49EAAB4288C4E6E002410A5;
 			packageReferences = (
 				E4045B61289ED0FD00C4CD8B /* XCRemoteSwiftPackageReference "analytics-ios" */,
-				E4045B66289F5E8100C4CD8B /* XCRemoteSwiftPackageReference "SegmentMultiplatformPackage" */,
+				E4FA2F9A2904BEB10061C777 /* XCRemoteSwiftPackageReference "SegmentMultiplatform" */,
 			);
 			productRefGroup = E49EAAC2288C4E70002410A5 /* Products */;
 			projectDirPath = "";
@@ -496,12 +496,12 @@
 				kind = branch;
 			};
 		};
-		E4045B66289F5E8100C4CD8B /* XCRemoteSwiftPackageReference "SegmentMultiplatformPackage" */ = {
+		E4FA2F9A2904BEB10061C777 /* XCRemoteSwiftPackageReference "SegmentMultiplatform" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/carlosmonzon/SegmentMultiplatformPackage";
+			repositoryURL = "https://github.com/carlosmonzon/SegmentMultiplatform";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = upToNextMinorVersion;
+				minimumVersion = 0.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -512,10 +512,10 @@
 			package = E4045B61289ED0FD00C4CD8B /* XCRemoteSwiftPackageReference "analytics-ios" */;
 			productName = Segment;
 		};
-		E4045B67289F5E8100C4CD8B /* MultiplatformAnalytics */ = {
+		E4FA2F9B2904BEB10061C777 /* SegmentMultiplatform */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E4045B66289F5E8100C4CD8B /* XCRemoteSwiftPackageReference "SegmentMultiplatformPackage" */;
-			productName = MultiplatformAnalytics;
+			package = E4FA2F9A2904BEB10061C777 /* XCRemoteSwiftPackageReference "SegmentMultiplatform" */;
+			productName = SegmentMultiplatform;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
